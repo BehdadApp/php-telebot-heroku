@@ -56,6 +56,10 @@ if(isset($update->callback_query)){
                     [
                         ['text'=>"🍀   الکترونیک را کاربردی2222 بیاموزید",'url'=>'https://telegram.me']
                     ],
+                    
+                    [
+                        ['text'=>"رفرش زمان",'callback_data'=>"1"]
+                    ]
 
 
 
