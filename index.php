@@ -23,11 +23,11 @@ function makeHTTPRequest($method,$datas=[]){
 $update = json_decode(file_get_contents('php://input'));
 
 if(isset($update->callback_query)){
-//    $callbackMessage = 'آپدیت شد';
-//    var_dump(makeHTTPRequest('answerCallbackQuery',[
-//        'callback_query_id'=>$update->callback_query->id,
-//        'text'=>$callbackMessage
-//    ]));
+    $callbackMessage = 'آپدیت شد';
+    var_dump(makeHTTPRequest('answerCallbackQuery',[
+        'callback_query_id'=>$update->callback_query->id,
+        'text'=>$callbackMessage
+    ]));
 }elseif(isset($update->inline_query)) {
     echo 'QUERY ...';
     var_dump(makeHTTPRequest('answerInlineQuery',[
