@@ -24,7 +24,7 @@ $update = json_decode(file_get_contents('php://input'));
 
 if(isset($update->callback_query)){
 
-}elseif(isset($update->inline_query)){
+}else {
     echo 'QUERY ...';
     var_dump(makeHTTPRequest('answerInlineQuery',[
         'inline_query_id'=>$update->inline_query->id,
@@ -84,7 +84,7 @@ if(isset($update->callback_query)){
             ]
         ]])
     ]));
-}else{
+}elseif(isset($update->inline_query)){
 
 
     $links = [
