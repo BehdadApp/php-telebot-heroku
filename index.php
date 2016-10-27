@@ -79,10 +79,6 @@ if(isset($update->callback_query)){
                     [
                         ['text'=>"🍀   بزرگترین جامعه مخابرات ایران",'url'=>'https://telegram.me/joinchat/A8RDtDwwxyTVaj9K0xLG6w']
                     ],
-                    [
-                        ['text'=>"🍀 11  الکترونیک را کاربردی بیاموزید",'url'=>'https://telegram.me/joinchat/BVnd0zvBMpqC72NYTJ8SKg']
-                    ],
-   
                    
                     [
                         ['text'=>"🍀   الکترونیک را کاربردی2222 بیاموزید",'url'=>'#']
