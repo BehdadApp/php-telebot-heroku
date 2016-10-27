@@ -23,11 +23,11 @@ function makeHTTPRequest($method,$datas=[]){
 $update = json_decode(file_get_contents('php://input'));
 
 if(isset($update->callback_query)){
-    $callbackMessage = 'آپدیت شد';
-    var_dump(makeHTTPRequest('answerCallbackQuery',[
-        'callback_query_id'=>$update->callback_query->id,
-        'text'=>$callbackMessage
-    ]));
+//    $callbackMessage = 'آپدیت شد';
+//    var_dump(makeHTTPRequest('answerCallbackQuery',[
+//        'callback_query_id'=>$update->callback_query->id,
+//        'text'=>$callbackMessage
+//    ]));
 }elseif(isset($update->inline_query)) {
     echo 'QUERY ...';
     var_dump(makeHTTPRequest('answerInlineQuery',[
@@ -51,34 +51,7 @@ if(isset($update->callback_query)){
                     [
                         ['text'=>"🍀   صفر تا صد برنامه نویسی ربات تلگرام",'url'=>'https://telegram.me/joinchat/BdES-zwJKKGeFT8434LVsQ']
                     ],
-                    [
-                        ['text'=>"🍀   شبکه , دوربین مداربسته",'url'=>'https://telegram.me/joinchat/BWhxGTugMMW3D5hnTdSXrA']
-                    ],
-                    [
-                        ['text'=>"🍀   بروزترین و جامع ترین کانال خبری در حوزه ی IT",'url'=>'https://telegram.me/joinchat/BGE6STwf65Fm0Nimh6MZog']
-                    ],
-
-                    [
-                        ['text'=>"🍀   آموزش matlab و simulink برای مهندسین برق",'url'=>'https://telegram.me/joinchat/B9zA5TyYiqLCFmt4GmMLPQ']
-                    ],
-                    [
-                        ['text'=>"🍀   آموزش کامپیوتر،طراحی سایت،فتوشاپ",'url'=>'https://telegram.me/joinchat/Brvu3T0m-L1qXH3bJSWj4g']
-                    ],
-
-
-                    [
-                        ['text'=>"🍀   مطالب روز امنیت IT",'url'=>'https://telegram.me/joinchat/BNK8jDwJqIbRBqFRTEcdrg']
-                    ],
-                    [
-                        ['text'=>"🍀   دانستنی های موبایل و کامپیوتر",'url'=>'https://telegram.me/joinchat/BMjEvjwbPt_SVBGbXwB2tw']
-                    ],
-
-                    [
-                        ['text'=>"🍀   آموزش 0 تا 100 طراحی وب سایت",'url'=>'https://telegram.me/joinchat/BZSb2TvbdqSvAgZBimlAhg']
-                    ],
-                    [
-                        ['text'=>"🍀   بزرگترین جامعه مخابرات ایران",'url'=>'https://telegram.me/joinchat/A8RDtDwwxyTVaj9K0xLG6w']
-                    ],
+                 
                    
                     [
                         ['text'=>"🍀   الکترونیک را کاربردی2222 بیاموزید",'url'=>'#']
